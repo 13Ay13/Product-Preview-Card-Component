@@ -20,17 +20,9 @@ body {
 	background-color: var(--cream);
 }
 
-a {
-	text-decoration: none;
-}
-
 .img {
 	border-top-left-radius: 10px;
 	border-top-right-radius: 10px;
-
-	background-position: center;
-	object-fit: cover;
-	background-size: cover;
 }
 
 .card-content {
@@ -49,6 +41,7 @@ a {
 
 .card {
 	max-width: 25.688rem;
+	margin-inline: 1.2em;
 
 	border-radius: 0;
 	background-color: var(--White);
@@ -130,48 +123,4 @@ a {
 
 		max-width: 37.5rem;
 	}
-}
-
-/* reset */
-body,
-h1,
-h2,
-h3,
-h4,
-p,
-figure,
-blockquote,
-dl,
-dd {
-	margin: 0;
-}
-
-*,
-*::before,
-*::after {
-	box-sizing: border-box;
-}
-
-img,
-picture,
-video,
-canvas,
-svg {
-	display: block;
-	max-width: 100%;
-}
-
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-	overflow-wrap: break-word;
-}
-
-html,
-body {
-	height: 100%;
 }
