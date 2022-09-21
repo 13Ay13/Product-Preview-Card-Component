@@ -1,0 +1,177 @@
+:root {
+	/* primary */
+	--dark-cyan: hsl(158, 36%, 37%);
+	--cream: hsl(30, 38%, 92%);
+	--very-dark-cyan: hsl(158, 36%, 27%);
+	--very-dark-blue: hsl(212, 21%, 14%);
+	--dark-grayish-blue: hsl(228, 12%, 48%);
+	--White: hsl(0, 0%, 100%);
+
+	--font: 14px;
+
+	--font-500: 500;
+	--font-700: 700;
+}
+
+body {
+	display: grid;
+	place-content: center;
+	line-height: 1.5;
+	background-color: var(--cream);
+}
+
+a {
+	text-decoration: none;
+}
+
+.img {
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+
+	background-position: center;
+	object-fit: cover;
+	background-size: cover;
+}
+
+.card-content {
+	padding: 1.5em;
+	display: flex;
+	flex-direction: column;
+	gap: 1em;
+	/* justify-content: space-between; */
+}
+
+.card-title {
+	font-size: 2.3rem;
+	line-height: 1em;
+	font-family: "Fraunces", serif;
+}
+
+.card {
+	max-width: 25.688rem;
+
+	border-radius: 0;
+	background-color: var(--White);
+	box-shadow: 6px 6px 5px 1px rgba(0, 0, 0, 0.36);
+	border-radius: 10px;
+}
+
+.button {
+	background-color: var(--dark-cyan);
+	color: var(--White);
+	transition: background 0.5s 0s ease-in-out;
+
+	padding-inline: 2em;
+	padding-block: 1em;
+	border-radius: 0.5em;
+	text-align: center;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 0.8em;
+
+	font-family: "Montserrat", sans-serif;
+	font-weight: var(--font-700);
+	font-size: 1rem;
+}
+
+.sub-heading {
+	letter-spacing: 0.3em;
+	text-transform: uppercase;
+	color: var(--dark-grayish-blue);
+	font-size: 14px;
+	font-family: "Montserrat", sans-serif;
+}
+
+.card-body {
+	color: var(--dark-grayish-blue);
+	font-family: "Montserrat", sans-serif;
+	font-size: 0.9rem;
+}
+
+.current-price {
+	font-size: 2rem;
+	color: var(--dark-cyan);
+	font-family: "Fraunces", serif;
+	font-weight: var(--font-700);
+}
+
+.previous-price {
+	color: var(--dark-grayish-blue);
+	text-decoration: line-through;
+	font-size: 1.1rem;
+}
+
+.prices {
+	display: flex;
+	align-items: center;
+	font-size: 0.9em;
+	gap: 2em;
+}
+
+/* hover state */
+.button:hover {
+	background-color: var(--very-dark-cyan);
+}
+
+@media screen and (min-width: 1400px) {
+	.img {
+		border-top-right-radius: 0;
+		border-bottom-left-radius: 10px;
+		border-top-left-radius: 10px;
+
+		max-width: 18.75rem;
+	}
+
+	.card {
+		display: flex;
+		border-radius: 10px;
+
+		max-width: 37.5rem;
+	}
+}
+
+/* reset */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+	margin: 0;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+	display: block;
+	max-width: 100%;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	overflow-wrap: break-word;
+}
+
+html,
+body {
+	height: 100%;
+}
