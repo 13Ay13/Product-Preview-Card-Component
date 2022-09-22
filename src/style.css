@@ -30,7 +30,6 @@ body {
 	display: flex;
 	flex-direction: column;
 	gap: 1em;
-	/* justify-content: space-between; */
 }
 
 .card-title {
@@ -93,6 +92,7 @@ body {
 .previous-price {
 	color: var(--dark-grayish-blue);
 	text-decoration: line-through;
+	font-family: "Montserrat", sans-serif;
 	font-size: 1.1rem;
 }
 

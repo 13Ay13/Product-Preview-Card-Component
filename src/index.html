@@ -7,25 +7,48 @@
 			name="viewport"
 			content="width=device-width, user-scalable=no initial-scale=1.0"
 		/>
-		<title>Product Preview Card Component</title>
+
 		<link rel="stylesheet" href="./reset.css" />
 		<link rel="stylesheet" href="./style.css" />
 		<link
 			href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500&family=Montserrat:wght@500;700&display=swap"
 			rel="stylesheet"
 		/>
+
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png"
+		/>
+
+		<title>Frontend Mentor | Product preview card component</title>
+		<style>
+			.attribution {
+				font-size: 1rem;
+				text-align: center;
+				margin-top: 0.7em;
+				letter-spacing: 0.1em;
+				font-family: "Fraunces", serif;
+			}
+
+			.attribution a {
+				color: hsl(233, 55%, 54%);
+			}
+		</style>
 	</head>
+
 	<body>
 		<article class="card">
 			<picture>
 				<source
 					class="img"
-					srcset="./assets/image-product-desktop.jpg"
+					srcset="../assets/image-product-desktop.jpg"
 					media="(min-width: 1400px)"
 				/>
 				<img
 					class="img"
-					src="./assets/image-product-mobile.jpg"
+					src="../assets/image-product-mobile.jpg"
 					alt="perfume-product-mobile"
 				/>
 			</picture>
@@ -42,10 +65,20 @@
 				</section>
 
 				<a href="#" class="button">
-					<img src="./assets/icon-cart.svg" alt="cart-icon" />
+					<img src="../assets/icon-cart.svg" alt="cart-icon" />
 					<p>Add to Cart</p>
 				</a>
 			</section>
 		</article>
+		<div class="attribution">
+			Challenge by
+			<a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+				>Frontend Mentor</a
+			>. Coded by
+			<a
+				href="https://github.com/13Ay13/Product-Preview-Card-Component/tree/master"
+				>13Ay13</a
+			>
+		</div>
 	</body>
 </html>
